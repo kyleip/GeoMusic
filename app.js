@@ -93,8 +93,9 @@ app.get('/callback', function(req, res) {
         var access_token = body.access_token,
             refresh_token = body.refresh_token;
 
-        var options = {
-          url: 'https://api.spotify.com/v1/me',
+        var options = { //CHANGE THIS TO GET different stufF@!!!!!!!!!!!!!!!!!!
+          //url: 'https://api.spotify.com/v1/me',
+           url: 'https://api.spotify.com/v1/me/top/tracks',
           headers: { 'Authorization': 'Bearer ' + access_token },
           json: true
         };
